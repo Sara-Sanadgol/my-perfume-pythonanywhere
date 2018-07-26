@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath="$PWD/perfume" clocks.wsgi:application --log-file -
+web: gunicorn mywebsite.wsgi --log-file -
