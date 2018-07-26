@@ -11,9 +11,6 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
-
-
 import dj_database_url
 
 ...
@@ -60,9 +57,16 @@ SECRET_KEY = '5*^*zmbs-90a=n#pudco#$4w2kaiu+tzw!z__*@li9j73qmitt'
 '''
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
-'''
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+
+'''
 
 # Application definition
 
