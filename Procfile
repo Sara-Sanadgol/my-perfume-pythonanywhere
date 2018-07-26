@@ -1,1 +1,1 @@
-web:gunicorn test_gunicorn.wsgi:application --log-file -
+web:gunicorn perfume.wsgi:application --log-file -
