@@ -4,7 +4,7 @@ from django.utils import timezone
 
 class SelectScent(models.Model):
     client = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    scent = models.CharField(max_length=100)
+    scent = models.CharField(max_length=300)
     text = models.TextField()
     created_date = models.DateTimeField(
             default=timezone.now)
