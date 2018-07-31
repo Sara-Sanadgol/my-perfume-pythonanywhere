@@ -14,7 +14,6 @@ import os
 import dj_database_url
 
 
-
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
