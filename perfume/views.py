@@ -5,4 +5,4 @@ from .models import SelectScent
 
 def perfume_list(request):
     posts = SelectScent.objects.filter(select_date__lte=timezone.now()).order_by('select_date')
-    return render(request, 'perfume/perfume-list.html', {'posts': posts})
+    return render(request, 'perfume/perfume_list.html', {'posts': posts})
